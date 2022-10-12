@@ -1,0 +1,15 @@
+.spham{
+  width:24%;
+  border:solid 1px black;
+  border-radius: 2%;
+  display:inline-block;
+  margin-left: 7%;
+
+}
+.img:hover
+{
+     box-shadow: 5px 5px 5px rgb(9, 54, 3);
+}
+.img{
+  padding: 0.25px;
+}

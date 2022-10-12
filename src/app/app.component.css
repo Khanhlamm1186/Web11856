@@ -1,0 +1,30 @@
+#lam{
+  background-color:rgb(83, 83, 2);
+}
+.nav-link{
+  color:white;
+}
+
+.imgg{
+  border-radius:5%;
+  -moz-border-radius:5%;
+  -webkit-border-radius:5%;
+}
+.imgg{
+  transform: scale(1);
+  transition: all 0.5s;
+  }
+.imgg:hover{
+  transform: scale(1.1);
+}
+.nav-link:hover{
+  background-color: rgb(13, 63, 31)
+}
+body {
+  padding: 0%;
+  text-align: center;
+}
+#img{
+  border-radius: 10px;
+  margin-bottom: 5%;
+}
