@@ -1,0 +1,65 @@
+
+<div class="container">
+  <br>
+  <br>
+  <h1 style="text-align: center">Nhập thông tin sản phẩm</h1>
+  <br>
+  <form #frmSP="ngForm" class="col-6 m-auto"
+  (ngSubmit)="spthem(frmSP.value)"
+  >
+    <p>
+       <input name="name" ngModel class="form-control" type="text" placeholder="Name">
+    </p>
+    <p>
+       <input name="price" ngModel class="form-control" type="number" placeholder="Price">
+    </p>
+    <p>
+      <input name="image" ngModel class="form-control" type="text" placeholder="LinkIMG">
+   </p>
+    <p><button type="submit" class="btn">Thêm SP</button></p>
+</form>
+  <br>
+  <br>
+  <br>
+</div>
+<div class="container">
+  <table>
+    <p>EDIT PRODUCT</p>
+    <tr>
+      <td>ID</td>
+      <td>Name</td>
+      <td>Price</td>
+      <td>Image</td>
+      <td>Xoasp</td>
+    </tr>
+    <tr *ngFor="let item of datas">
+      <td>{{item.id}}</td>
+      <td>{{item.name}}</td>
+      <td>{{item.price}}</td>
+      <td><img class="imgg" src="{{item.image}}" alt="loading"/></td>
+      <td><button (click)="deleteSP(item.id)">X</button></td>
+    </tr>
+  </table>
+  <br>
+  <table>
+    <p>LIST BILL</p>
+    <tr>
+      <td>ID</td>
+      <td>Namesp</td>
+      <td>Customer</td>
+      <td>Address</td>
+      <td>Phonenumber</td>
+      <td>XoaDon</td>
+    </tr>
+    <tr *ngFor="let item1 of bills">
+      <td>{{item1.id}}</td>
+      <td>{{item1.namesp}}</td>
+      <td>{{item1.customer}}</td>
+      <td>{{item1.address}}</td>
+      <td>{{item1.phonenumber}}</td>
+      <td><button (click)="deleteDH(item1.id)">X</button></td>
+    </tr>
+  </table>
+</div>
+
+

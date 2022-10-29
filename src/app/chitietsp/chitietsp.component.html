@@ -1,0 +1,27 @@
+
+<div class="container">
+  <form #frmSP="ngForm" class="col-6 m-auto"
+  (ngSubmit)="spthem(frmSP.value)"
+  >
+    <p>
+       <input name="customer" ngModel [(ngModel)]="value1" class="form-control" type="text" placeholder="Tên của bạn:">
+    </p>
+    <p>
+      <input name="namesp" ngModel [(ngModel)]="value4" class="form-control" type="text" placeholder="Tên sản phẩm muốn mua:">
+   </p>
+    <p>
+       <input name="address" ngModel [(ngModel)]="value2" class="form-control" type="text" placeholder="Địa chỉ nhận hàng">
+    </p>
+    <p>
+      <input name="phonenumber" ngModel [(ngModel)]="value3" class="form-control" type="text" placeholder="Số điện thoại nhận hàng">
+   </p>
+    <div >
+        <div class="featured-item">
+          <img class="imgg" src="{{product.image}}">
+          <h4>{{product.name}}</h4>
+          <h6>{{product.price}} VND</h6>
+          <button type="submit" class="btn-dark" (click)="muaHang()" >Mua Ngay</button>
+        </div>
+    </div>
+</form>
+</div>

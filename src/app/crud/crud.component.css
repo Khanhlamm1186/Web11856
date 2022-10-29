@@ -1,0 +1,17 @@
+table{
+  border:1px solid black;
+  width:100%
+}
+tr{
+  border:1px solid black;
+}
+td{
+  border:1px solid black;
+}
+.imgg{
+  width:50px;
+}
+.btn{
+  background-color: black;
+  color: white;
+}

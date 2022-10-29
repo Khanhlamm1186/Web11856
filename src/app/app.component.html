@@ -3,7 +3,7 @@
   <img style="width:100%;height:20%;margin:0%" src="https://scontent.xx.fbcdn.net/v/t1.15752-9/311258968_5552276991537140_8925365804803711666_n.jpg?stp=dst-jpg_p403x403&amp;_nc_cat=106&amp;ccb=1-7&amp;_nc_sid=aee45a&amp;_nc_ohc=1rK32ovY5qgAX_iiDUM&amp;_nc_ad=z-m&amp;_nc_cid=0&amp;_nc_ht=scontent.xx&amp;oh=03_AVKNxAIBZnWmxGLGtvvBy8zO-lXeN0tULerqRQYlYyh7Sg&amp;oe=6369F3C7" alt="canot load image">
 </header>
 <nav id="lam" class="navbar navbar-expand-lg navbar-dark bg-dark-light">
-  <a class="nav-link" href="#">Trang chủ</a>
+  <a class="nav-link" href="/sanpham">Trang chủ</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -11,7 +11,7 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link" href="#">Sản phẩm bán chạy <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="/sanpham">Sản phẩm bán chạy <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="https://www.facebook.com/haircarenature/photos/?ref=page_internal">Linkface <span class="sr-only">(current)</span></a>
@@ -29,7 +29,9 @@
       <li>
         <img class="imgg" style="width:28%;float:right;margin-right:-100%;" src="https://scontent.xx.fbcdn.net/v/t1.15752-9/310008195_3300519886943086_5296955581682160537_n.jpg?stp=dst-jpg_s206x206&amp;_nc_cat=111&amp;ccb=1-7&amp;_nc_sid=aee45a&amp;_nc_ohc=nlL8MscwoocAX9MJiW4&amp;_nc_ad=z-m&amp;_nc_cid=0&amp;_nc_ht=scontent.xx&amp;oh=03_AVLhzQtZTwwtRxO9MnZ0B5BPPOOCdGZs4sn2vL9R-Gphag&amp;oe=636AD30D">
       </li>
-
+      <li class="nav-item">
+        <a class="nav-link" href="/login">Quan tri web <span class="sr-only">(current)</span></a>
+      </li>
     </ul>
 
     <form class="form-inline my-2 my-lg-0">
@@ -43,10 +45,11 @@
   @haircarenature  · Làm đẹp, mỹ phẩm &amp; chăm sóc cá nhân</p>
   <div id="slideshow">
     <div class="slide-wrapper">
-      <div class="slide"><img (click)="changeImg()" style="width:1000px;height:400px;margin-left:0px;" id="img" src="{{value}}"></div>
+      <div style="height:50%" class="slide"><img (click)="changeImg()" style="width:70%;height:300px;margin-left:0px;" id="img" src="{{value}}"></div>
     </div>
   </div>
-  <app-sanpham></app-sanpham>
+<a href=""></a>
+<router-outlet></router-outlet>
 <br>
 <br>
 <br>
@@ -56,7 +59,7 @@
 <br><br>
 <br><br>
 <br>
-<footer style="background-color:rgb(83, 83, 2);">
+<footer style="background-color:rgb(19, 19, 18);">
   <br><br><br><br>
   <div style="text-align:center ;color:white">
     <p>1186 @haircarenature · Làm đẹp, mỹ phẩm &amp; chăm sóc cá nhân</p>
@@ -75,3 +78,5 @@
   <br><br><br><br>
 </footer>
 </body>
+
+

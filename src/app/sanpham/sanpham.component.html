@@ -1,12 +1,12 @@
-<body><div class="container">
-  <div class="spham">
-    <img class="img" style="width:100%" src="https://scontent.fhan2-5.fna.fbcdn.net/v/t39.30808-6/268466111_111479201394483_6841736609874699927_n.jpg?_nc_cat=107&amp;ccb=1-7&amp;_nc_sid=8bfeb9&amp;_nc_ohc=G7XdGnbhscMAX_jt2Fh&amp;tn=D2yGAdun5gDKW_7T&amp;_nc_ht=scontent.fhan2-5.fna&amp;oh=00_AT_H5MdYlW5o7TXcDksHK3jzMxN24bR7tcI27fmJFBKEtQ&amp;oe=634B013E" alt="">
-  </div>
-  <div class="spham">
-    <img class="img" style="width:100%" src="https://scontent.fhan2-2.fna.fbcdn.net/v/t39.30808-6/269808076_111480238061046_4729803131854227521_n.jpg?stp=dst-jpg_p720x720&amp;_nc_cat=111&amp;ccb=1-7&amp;_nc_sid=8bfeb9&amp;_nc_ohc=cRuoC08DgTwAX_yGpOR&amp;tn=D2yGAdun5gDKW_7T&amp;_nc_ht=scontent.fhan2-2.fna&amp;oh=00_AT8hKK9XqPKApQMFZ-G4elbL7qtsZGvYVm62-69vtHsWvA&amp;oe=634BE9AF">
-  </div>
-  <div class="spham">
-    <img class="img" style="width:100%" src="https://scontent.fhan2-4.fna.fbcdn.net/v/t39.30808-6/268836771_111479474727789_8062307197343440396_n.jpg?stp=dst-jpg_p720x720&amp;_nc_cat=100&amp;ccb=1-7&amp;_nc_sid=8bfeb9&amp;_nc_ohc=X2i7MNy6SqQAX9cWDsJ&amp;_nc_ht=scontent.fhan2-4.fna&amp;oh=00_AT_fZ3MbZVxORpAbH6qTuTkxHmqWU2yY9z0glNqbErm0rQ&amp;oe=634BFE78">
+<div class="container">
+  <div id="1" class="item new col-md-4" *ngFor="let item of datas">
+
+      <div class="featured-item">
+        <img class="anhsp" src="{{item.image}}">
+        <h4>{{item.name}}</h4>
+        <h6>{{item.price}} VND</h6>
+      </div>
+      <a href="/detail/{{item.id}}">Chi Tiết Sản Phẩm</a>
   </div>
 </div>
-</body>
+
